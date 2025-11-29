@@ -13,11 +13,17 @@
  */
 
  #include<iostream>
+ #include"crear_producto.cc"
  #include"producto.cc"
 
  int main(){
-  Producto p1 = Producto("Producto", 10, )
-
+  char siono, s{s};
+  std::cout << "¿Crear producto? [s/n]: ";
+  std::cin >> siono;
+  if(siono == s)
+    crear_producto();
+  else
+    return 0;
 
   return 0;
  }

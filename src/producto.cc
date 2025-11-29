@@ -21,19 +21,19 @@ class Producto{
     int precio;
     int referencia;
     int stock;
-    std::string descripción_producto;
-    std::vector<int> fecha_creación(3);
+    std::string descripcion_producto;
+    std::vector<int> fecha_creacion(3);
 
   public: //métodos
     Producto(std::string, int, int, int, std::string, std::vector<int> );// constructor
   }
 
 //Constructor
-Producto::Producto(std::string nombre_producto,int precio,int referencia,int stock,std::string descripción_producto,std::vector<int> fecha_creación(3)){
+Producto::Producto(std::string nombre_producto,int precio,int referencia,int stock,std::string descripcion_producto,std::vector<int> fecha_creacion(3)){
   this.nombre_producto = nombre_producto;
   this.precio = precio;
   this.referencia = referencia;
   this.stock = stock;
-  this.descripción_producto = descripción_producto;
-  this.fecha_creación = fecha_creación;  
+  this.descripcion_producto = descripcion_producto;
+  this.fecha_creacion = fecha_creacion;  
 }
