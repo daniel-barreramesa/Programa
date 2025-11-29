@@ -26,4 +26,5 @@ class Producto{
 
   public: //métodos
     Producto(std::string nombre_producto, int precio, int referencia, int stock, std::string descripcion_producto, std::vector<int> fecha_creacion);// constructor
-  };//corrección
+    void crear_producto();
+};//corrección
