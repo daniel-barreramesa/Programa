@@ -4,9 +4,10 @@
 #include<string>
 #include<vector>
 #include<fstream>
-#include"producto.cc"
+//#include"producto.cc"
 
 void crear_producto(){
+  std::cin.ignore();
   std::string nombre, descripcion;
   int precio, referencia, stock;
   std::vector<int> fecha_creacion(3);

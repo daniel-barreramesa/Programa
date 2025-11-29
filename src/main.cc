@@ -17,7 +17,7 @@
  #include"producto.cc"
 
  int main(){
-  char siono, s{s};
+  char siono, s{'s'};
   std::cout << "¿Crear producto? [s/n]: ";
   std::cin >> siono;
   if(siono == s)
