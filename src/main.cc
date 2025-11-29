@@ -13,7 +13,6 @@
  */
 
  #include<iostream>
- #include"crear_producto.cc"
  #include"producto.cc"
 
  int main(){

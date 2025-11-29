@@ -1,7 +1,7 @@
 /**
 *@brief Inicializo los métodos.
 */
-
+#include<fstream>
 #include"producto.h"
 
 //Constructor
@@ -37,12 +37,20 @@ void crear_producto(){
   std::cin.clear();//borrar la entrada residual que queda en el input stream
   std::cout << "Año actual: ";
   std::cin >> fecha_creacion[2];
-  std::cin.clear();//borrar la entrada residual que queda en el input stream
+  std::cin.ignore();//borrar la entrada residual que queda en el input stream
   std::cout << "Descripción del producto: ";
   std::getline(std::cin, descripcion);
-  std::cin.ignore();//borrar la entrada residual que queda en el input stream
   //El usuario rellena los campos necesarios para el constructor
   Producto p1 = Producto(nombre, precio, referencia, stock, descripcion, fecha_creacion); //Creo el producto
   std::cout << "Listo \n";
-  std::cout << nombre << "\n";
+  //AHORA CREO EL ARCHIVO DE TEXTO
+  std::string archivo, txt = ".txt", directorio = "saves/";
+  archivo = directorio +nombre + txt;
+  std::ofstream outfile{archivo}; //Indico donde guardar el archivo
+  outfile << nombre << std::endl;
+  outfile << precio << std::endl;
+  outfile << referencia << std::endl;
+  outfile << stock << std::endl;
+  outfile << descripcion << std::endl;
+  outfile << fecha_creacion[0] << "/" << fecha_creacion[1] << "/" << fecha_creacion[2] << std::endl;
 }
