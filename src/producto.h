@@ -18,13 +18,13 @@
 class Producto{
   private: //atributos
     std::string nombre_producto;
-    int precio;
+    double precio;
     int referencia;
     int stock;
     std::string descripcion_producto;
     std::vector<int> fecha_creacion; //corrección
 
   public: //métodos
-    Producto(std::string nombre_producto, int precio, int referencia, int stock, std::string descripcion_producto, std::vector<int> fecha_creacion);// constructor
+    Producto(std::string nombre_producto, double precio, int referencia, int stock, std::string descripcion_producto, std::vector<int> fecha_creacion);// constructor
     void crear_producto();
 };//corrección

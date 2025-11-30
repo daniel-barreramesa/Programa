@@ -5,7 +5,7 @@
 #include"producto.h"
 
 //Constructor
-Producto::Producto(std::string nombre_producto,int precio,int referencia,int stock,std::string descripcion_producto,std::vector<int> fecha_creacion){
+Producto::Producto(std::string nombre_producto,double precio,int referencia,int stock,std::string descripcion_producto,std::vector<int> fecha_creacion){
   this->nombre_producto = nombre_producto;
   this->precio = precio;
   this->referencia = referencia;
@@ -18,7 +18,8 @@ Producto::Producto(std::string nombre_producto,int precio,int referencia,int sto
 void crear_producto(){
   std::cin.ignore();
   std::string nombre, descripcion;
-  int precio, referencia{1234}, stock;
+  double precio;
+  int referencia{1234}, stock;
   std::vector<int> fecha_creacion(3);
   //Declaro todas las variables que voy a necesitar para crear el producto
   std::cout << "Nombre del producto: ";

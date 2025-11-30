@@ -17,12 +17,24 @@
 
  int main(){
   char siono, s{'s'};
+  int opcion;
+
+  std::cout << "\nMENU \n";
+  std::cout << "--------------------------------------------------------------- \n";
+  std::cout << "1. Realizar venta \n";
+  std::cout << "2. Realizar devolución \n";
+  std::cout << "3. Crear producto \n";
+  std::cout << ": ";
+  std::cin >> opcion;
+
+  if (opcion == 3){
   std::cout << "¿Crear producto? [s/n]: ";
   std::cin >> siono;
   if(siono == s)
     crear_producto();
   else
     return 0;
+  }
 
   return 0;
  }
